@@ -16,14 +16,11 @@ logging.basicConfig(
 )
 
 # sets the dragged file to the music directory
-try:
-    music_path = sys.argv[1]
-except IndexError:
-    music_path = input(
-        f"Input the directory of folder of music to add lyrics to:\n"
-    )
-finally:
-    os.chdir(music_path)
+music_path = input(
+    f"Drag and drop the folder containing you music below, or type the "
+    "directory of folder of music to add lyrics to and then press enter...\n"
+)
+os.chdir(music_path)
 
 # gets genius api token, then defines and configures genius obj
 load_dotenv()

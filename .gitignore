@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# other
+/dist
+/AutoLyricAdder
+AutoLyricAdder.zip
+log.txt
