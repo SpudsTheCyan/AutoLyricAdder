@@ -1,19 +1,15 @@
-from distutils.core import setup
-import py2exe
+from setuptools import setup
 
-setup(
-    name="AutoLyricAdder_v1.1",
-    console=[
-        {
-            "script":"main.py",
-            'dest_base' : 'AutoLyricAdder'
-        }
-    ],
-    options={
-        "py2exe": {
-            "bundle_files": True,
-            "optimize": 2,
-        }
-    },
-    zipfile=None,
-)
+setup(name='autolyricadder',
+      version='1.1',
+      description='Automatically adds lyric metadata to .mp3 files',
+      url='http://github.com/storborg/funniest',
+      author='relyt1224',
+      packages=['autolyricadder'],
+      install_requires=[
+          'dotenv',
+          'eyed3',
+          'lyricsgenius',
+          'progressbar'
+      ],
+      zip_safe=False)
