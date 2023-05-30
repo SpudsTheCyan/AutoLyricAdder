@@ -1,3 +1,5 @@
+# **IMPORTANT!! Unfortunately, it seems that Genius has completely changed their API, rendering this program useless. I'll try to fix the issue, but as of now, the program would need a full rewrite, which I just don't have time for atm. Sorry...
+
 # AutoLyricAdder
 
 This program will automatically add lyric metadata to your .mp3 files
